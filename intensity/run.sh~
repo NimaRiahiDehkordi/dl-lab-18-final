@@ -1,0 +1,6 @@
+#!/bin/sh
+END=20
+for ((i=1;i<=END;i++)); do
+    python3 Train_Net.py --checkpoint_dir=./checkpoints/$i/ --configuration=4 --logs_path=./logs/$i/ --dataset='CamVidV300'
+    python3 Test_Net.py --model_path=./checkpoints/$i --configuration=4 --dataset='CamVidV300'
+done

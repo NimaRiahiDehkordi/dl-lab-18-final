@@ -1,0 +1,9 @@
+final_project/
+data/
+intensity/data/
+spacial/data/
+intensity/checkpoints/
+spacial/checkpoints/
+intensity/logs/
+spacial/logs/
+
